@@ -7,7 +7,7 @@ public class PinkFrameWithSwing {
 	{
 		JFrame F=new JFrame();
 		F.setVisible(true);
-		F.setSize(400,400);
+		F.setSize(300,300);
 		F.setLayout(new FlowLayout());
 		F.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
