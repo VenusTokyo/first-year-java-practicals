@@ -7,7 +7,7 @@ public class pinkframe extends Frame
 		Label l=new Label("Hello There");
 	
 		f.add(l);
-		f.setSize(300, 300);
+		f.setSize(500,500);
 		f.setLayout(new FlowLayout());
 		f.setVisible(true);
 		f.setBackground(Color.pink);
