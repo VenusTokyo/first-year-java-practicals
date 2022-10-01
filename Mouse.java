@@ -39,14 +39,31 @@ class MyMouseAdapter extends MouseAdapter
 	public void mouseEntered (MouseEvent me)
 	{
 		ad.msg="Mouse Entered";
-		ad.setSize(3*400,3*400);
+		ad.setSize(3*400,3*500);
 		ad.repaint();
+	}
+		Mouse()
+	{
+		addMouseListener(new MyMouseAdapter(this));
+		addWindowListener(new windowclose());
+	}
+	public MyMouseAdapter(Mouse ad)
+	{
+		this.ad=ad;
 	}
 	public void mouseExited(MouseEvent me)
 	{
 		System.exit(0);
 	}
 }
+public void mouseClicked(MouseEvent me)
+	{
+		ad.msg="Mouse Clicked";
+		ad.setBackground(Color.pink);
+		ad.setForeground(Color.black);
+		ad.setSize(400,400);
+		ad.repaint();
+	}
 
 class windowclose extends WindowAdapter
 {
